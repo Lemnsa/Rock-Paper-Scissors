@@ -52,6 +52,13 @@ for (let i=1; i<=5; i++) {
     playRound(humanSelection, computerSelection);
 }
 
+    // get a winner after the five rounds
+    if (humanScore > computerScore) {
+        console.log("Game Over! You win!");
+    } else {
+        console.log("Game Over! You Lose!");
+    }
+
 }
 
 playGame();
