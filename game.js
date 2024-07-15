@@ -38,12 +38,17 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
-// player scores variables
-let humanScore = 0;
-let computerScore = 0;
 
 // players selections
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
-playRound(humanSelection, computerSelection);
+// function to play game
+function playGame() {
+    // player scores variables
+    let humanScore = 0;
+    let computerScore = 0;
+
+    playRound(humanSelection, computerSelection);
+
+}
