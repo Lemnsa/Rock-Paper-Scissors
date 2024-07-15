@@ -7,7 +7,6 @@ function getComputerChoice() {
     return computerChoice;
 }
 
-getComputerChoice();
 
 // function to get user choice 
 function getHumanChoice() {
@@ -15,7 +14,6 @@ function getHumanChoice() {
     return humanChoice.toLowerCase(); // convert humanChoice tolowerCase
 }
 
-getHumanChoice();
 
 // function to play a round
 function playRound(humanChoice, computerChoice) {
