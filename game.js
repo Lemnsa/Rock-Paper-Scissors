@@ -16,3 +16,7 @@ function getHumanChoice() {
 }
 
 getHumanChoice();
+
+// player scores variables
+let humanScore = 0;
+let computerScore = 0;
