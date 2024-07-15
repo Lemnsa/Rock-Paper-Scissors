@@ -14,18 +14,12 @@ function getHumanChoice() {
     return humanChoice.toLowerCase(); // convert humanChoice tolowerCase
 }
 
-// players selections
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
 
 // function to play game
 function playGame() {
     // player scores variables
     let humanScore = 0;
     let computerScore = 0;
-
-    playRound(humanSelection, computerSelection);
-
 
 // function to play a round
 function playRound(humanChoice, computerChoice) {
@@ -50,4 +44,14 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
+for (let i=1; i<=5; i++) {
+    // players selections
+    const humanSelection = getHumanChoice();
+    const computerSelection = getComputerChoice();
+
+    playRound(humanSelection, computerSelection);
 }
+
+}
+
+playGame();
