@@ -17,6 +17,27 @@ function getHumanChoice() {
 
 getHumanChoice();
 
+// function to play a round
+function playRound(humanChoice, computerChoice) {
+    if (humanChoice === computerChoice) {
+        console.log("Tight game!");
+    }
+    else if (humanChoice > computerChoice) {
+        console.log("You lose! " + humanChoice + " beats "+ computerChoice + "!");
+        humanScore += 1;
+    }
+    else {
+        console.log("You lose! " + computerChoice + " beats "+ humanChoice + "!");
+        computerScore += 1;
+    }
+}
+
 // player scores variables
 let humanScore = 0;
 let computerScore = 0;
+
+// players selections
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
+playRound(humanSelection, computerSelection);
