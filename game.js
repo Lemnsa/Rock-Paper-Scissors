@@ -53,11 +53,7 @@ for (let i=1; i<=5; i++) {
 }
 
     // get a winner after the five rounds
-    if (humanScore > computerScore) {
-        console.log("Game Over! You win!");
-    } else {
-        console.log("Game Over! You Lose!");
-    }
+    console.log(humanScore === computerScore ? "It's a tie! Game Over!" : humanScore > computerScore ? "You win! Game Over!" : "You loose! Game Over!");
 
 }
 
