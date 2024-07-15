@@ -20,8 +20,16 @@ function playRound(humanChoice, computerChoice) {
     if (humanChoice === computerChoice) {
         console.log("Tight game!");
     }
-    else if (humanChoice > computerChoice) {
+    else if (humanChoice === 'rock' && computerChoice === 'scissors') {
         console.log("You lose! " + humanChoice + " beats "+ computerChoice + "!");
+        humanScore += 1;
+    }
+    else if (humanChoice === 'scissors' && computerChoice === 'paper') {
+        console.log("You lose! "+ humanChoice +"beats "+ computerChoice +"!");
+        humanScore += 1;
+    }
+    else if (humanChoice === 'paper' && computerChoice === 'rock') {
+        console.log("You lose! "+ humanChoice +" beats "+ computerChoice +"!");
         humanScore += 1;
     }
     else {
