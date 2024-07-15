@@ -21,15 +21,15 @@ function playRound(humanChoice, computerChoice) {
         console.log("Tight game!");
     }
     else if (humanChoice === 'rock' && computerChoice === 'scissors') {
-        console.log("You lose! " + humanChoice + " beats "+ computerChoice + "!");
+        console.log("You Win! " + humanChoice + " beats "+ computerChoice + "!");
         humanScore += 1;
     }
     else if (humanChoice === 'scissors' && computerChoice === 'paper') {
-        console.log("You lose! "+ humanChoice +"beats "+ computerChoice +"!");
+        console.log("You Win! "+ humanChoice +"beats "+ computerChoice +"!");
         humanScore += 1;
     }
     else if (humanChoice === 'paper' && computerChoice === 'rock') {
-        console.log("You lose! "+ humanChoice +" beats "+ computerChoice +"!");
+        console.log("You Win! "+ humanChoice +" beats "+ computerChoice +"!");
         humanScore += 1;
     }
     else {
