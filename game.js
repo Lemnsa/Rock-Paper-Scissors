@@ -8,3 +8,11 @@ function getComputerChoice() {
 }
 
 getComputerChoice();
+
+// function to get user choice 
+function getHumanChoice() {
+    let humanChoice = prompt("Enter your choice [Rock, Paper, Scissors]");
+    return humanChoice.toLowerCase(); // convert humanChoice tolowerCase
+}
+
+getHumanChoice();
