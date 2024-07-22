@@ -48,7 +48,14 @@ buttons.addEventListener("click", (e) => {
             break;
     }
      playRound(humanChoice, computerChoice);
-  
+    
+    //  show computer and human choices
+        const humanChoiceDiv = document.getElementById("humanChoice");
+        humanChoiceDiv.innerText = humanChoice.toUpperCase();
+
+        const computerChoiceDiv = document.getElementById("computerChoice");
+        computerChoiceDiv.innerText = computerChoice.toUpperCase();
+
         if(humanScore == 5){
             finalResultsDiv.innerText = "You WON!";
             computerScore = 0;
