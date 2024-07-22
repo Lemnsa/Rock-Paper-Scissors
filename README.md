@@ -13,7 +13,7 @@ These are functions which within them we have other functions.
 The Math.random() returns a random number(float) between 0 and 1.
 Math.floor() rounds down this number to the nearest whole number.
 
-### DOM (document Oject Model)
+### DOM (document Object Model)
 Helps us to manipulate html elements on the page, updating the UI based on particular constraints.
 
 ### Git branching
