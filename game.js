@@ -28,6 +28,10 @@ let showRoundScores = (human, computer) => {
     computerScoreDiv.innerText = computer;
 }
 
+
+// // function to play game
+function playGame() {
+
 const finalResultsDiv = document.getElementById("mainResults");
 const buttons = document.querySelector(".btns");
 buttons.addEventListener("click", (e) => {
@@ -101,20 +105,5 @@ function playRound(humanChoice, computerChoice) {
         showRoundScores(humanScore, computerScore);
     }
 }
-
-
-// // function to play game
-// function playGame() {
-//     // player scores variables
-
-
-// // function to play a round
-
-
-
-//     // get a winner after the five rounds
-//     console.log(humanScore === computerScore ? "It's a tie! Game Over!" : humanScore > computerScore ? "You win! Game Over!" : "You loose! Game Over!");
-
-// }
-
-// // playGame();
+}
+playGame();
