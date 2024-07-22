@@ -13,10 +13,13 @@ These are functions which within them we have other functions.
 The Math.random() returns a random number(float) between 0 and 1.
 Math.floor() rounds down this number to the nearest whole number.
 
-### Ternary Operator
-This is a short way to write a long ####if else statement
-condition ? value_if_true : value_if_false
+### DOM (document Oject Model)
+Helps us to manipulate html elements on the page, updating the UI based on particular constraints.
 
-### For Loop
-This loop executes a condition until a particular number of specified times.
+### Git branching
+This is a technique used to separate the branch containing the old product from the new features 
+to be added. This helps the developer from messing up the original product with not-ready features.
+<li>You can share this branch to other developers for help or contribution.</li>
+After everything is set, you can then merge the branch to main one.
+The temporal branch can be deleted now.
 
