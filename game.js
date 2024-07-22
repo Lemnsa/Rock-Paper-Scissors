@@ -14,6 +14,20 @@ let computerChoice = getComputerChoice();
 let humanScore = 0;
 let computerScore = 0;
  
+// display each round's result
+let showRoundResults = (result) => {
+    let resultDiv = document.getElementById("roundResult");
+    resultDiv.innerText = result;
+}
+
+// display each round's scores
+let showRoundScores = (human, computer) => {
+    let humanScoreDiv = document.getElementById("humanScore");
+    let computerScoreDiv = document.getElementById("computerScore");
+    humanScoreDiv.innerText = human;
+    computerScoreDiv.innerText = computer;
+}
+
 const buttons = document.querySelector(".btns");
 buttons.addEventListener("click", (e) => {
     let targetButton = e.target;
@@ -35,24 +49,34 @@ buttons.addEventListener("click", (e) => {
 });
 
 function playRound(humanChoice, computerChoice) {
+    let result;
     if (humanChoice === computerChoice) {
-        console.log("Tie game!");
+        result = "Tie game!";
+        showRoundResults(result);
     }
     else if (humanChoice === 'rock' && computerChoice === 'scissors') {
-        console.log("You Win! " + humanChoice + " beats "+ computerChoice + "!");
+        result = "You win!";
+        showRoundResults(result);
         humanScore += 1;
+        showRoundScores(humanScore, computerScore);
     }
     else if (humanChoice === 'scissors' && computerChoice === 'paper') {
-        console.log("You Win! "+ humanChoice +" beats "+ computerChoice +"!");
+        result = "You win!";
+        showRoundResults(result);
         humanScore += 1;
+        showRoundScores(humanScore, computerScore);
     }
     else if (humanChoice === 'paper' && computerChoice === 'rock') {
-        console.log("You Win! "+ humanChoice +" beats "+ computerChoice +"!");
+        result = "You win!";
+        showRoundResults(result);
         humanScore += 1;
+        showRoundScores(humanScore, computerScore);
     }
     else {
-        console.log("You lose! " + computerChoice + " beats "+ humanChoice + "!");
+        result = "You Lose!";
+        showRoundResults(result);
         computerScore += 1;
+        showRoundScores(humanScore, computerScore);
     }
 }
 
