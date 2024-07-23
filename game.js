@@ -28,8 +28,10 @@ let showRoundScores = (human, computer) => {
     computerScoreDiv.innerText = computer;
 }
 
+const finalResultsDiv = document.getElementById("mainResults");
 const buttons = document.querySelector(".btns");
 buttons.addEventListener("click", (e) => {
+    computerChoice = getComputerChoice();
     let targetButton = e.target;
     let buttonId = targetButton.id;
     switch(buttonId) {
@@ -45,7 +47,21 @@ buttons.addEventListener("click", (e) => {
             humanChoice = 'scissors';
             break;
     }
-    playRound(humanChoice, computerChoice);
+     playRound(humanChoice, computerChoice);
+  
+        if(humanScore == 5){
+            finalResultsDiv.innerText = "You WON!";
+            computerScore = 0;
+            humanScore = 0;
+        }
+        else if(computerScore == 5){
+            finalResultsDiv.innerText = "You LOSE!";
+            computerScore = 0;
+            humanScore = 0;
+        }else {
+            humanScore;
+            computerScore;
+        }
 });
 
 function playRound(humanChoice, computerChoice) {
