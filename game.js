@@ -59,8 +59,7 @@ buttons.addEventListener("click", (e) => {
             computerScore = 0;
             humanScore = 0;
         }else {
-            humanScore;
-            computerScore;
+            finalResultsDiv.innerText = '';
         }
 });
 
